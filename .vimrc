@@ -12,6 +12,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+set number
+set cursorline
+set cursorcolumn
+
 let mapleader="," " be kind to my fingers
 
 set hidden " allow switching buffers without saving
@@ -24,7 +28,7 @@ autocmd QuickfixCmdPost grep copen " auto-open the quick fix list
 
 autocmd BufNewFile,BufRead * set foldmethod=indent " fold code by indentation
 
-"set backgroud=light
+set background=light
 colorscheme solarized
 
 " syntax checking
