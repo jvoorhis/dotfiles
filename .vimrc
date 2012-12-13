@@ -13,6 +13,7 @@ set shiftwidth=2
 set expandtab
 
 set number
+set ruler
 set cursorline
 set cursorcolumn
 
