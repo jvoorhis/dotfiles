@@ -1,1 +1,1 @@
-set guifont=Source\ Code\ Pro\ ExtraLight:h16
+set guifont=Source\ Code\ Pro\ Light:h16
