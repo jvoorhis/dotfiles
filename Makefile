@@ -3,4 +3,4 @@
 all: install
 
 install:
-	rsync -avz . ~
+	rsync -avz --exclude '.git' . ~
