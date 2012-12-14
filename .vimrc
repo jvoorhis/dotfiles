@@ -36,6 +36,7 @@ set grepprg=ack\ -aH\ --nocolor " ack is better
 autocmd QuickfixCmdPost grep copen " auto-open the quick fix list
 
 autocmd BufNewFile,BufRead * set foldmethod=indent " fold code by indentation
+set foldlevel=4
 
 " syntax checking
 let g:syntastic_ruby_exec='~/.rbenv/shims/ruby'
