@@ -59,10 +59,15 @@ esac
 # CUDA
 if [[ -d /usr/local/cuda ]]; then
   export PATH="/usr/local/cuda/bin:$PATH"
+  case $(uname) in
+    Darwin)
+      export DYLD_LIBRARY_PATH="/usr/local/cuda/lib:$DYLD_LIBRARY_PATH"
+    ;;
+  esac
 fi
 
 # credentials
-if [ -f ~/.zshrc_private ]; then
+if [[ -f ~/.zshrc_private ]]; then
   source ~/.zshrc_private
 fi
 
