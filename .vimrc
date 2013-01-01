@@ -15,9 +15,10 @@ set fileformats=unix,dos,mac " line endings are still a thing?
 set encoding=utf-8 nobomb " People still use latin1?
 set hidden        " allow switching buffers without saving
 
-set clipboard=unnamed
+set mouse=a       " Allow mouse to interact with cursor, windows, tabs, etc.
+set clipboard=unnamed " Yank into system clipboard
 
-set tabstop=2
+set tabstop=2     " Soft, 2-space tabs
 set shiftwidth=2
 set expandtab
 
