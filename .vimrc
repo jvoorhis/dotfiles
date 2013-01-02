@@ -30,7 +30,9 @@ set cursorcolumn
 " Whitespace Highlighting
 set list listchars=tab:»\ ,trail:·,precedes:<,extends:>
 
+" File browser
 map <leader>n :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 set grepprg=ack\ -aH\ --nocolor " ack is better
 
