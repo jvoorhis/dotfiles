@@ -33,6 +33,7 @@ set list listchars=tab:»\ ,trail:·,precedes:<,extends:>
 " File browser
 map <leader>n :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.svn$', '\.DS_Store$', '\.git$' ]
 
 set grepprg=ack\ -aH\ --nocolor " ack is better
 
