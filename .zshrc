@@ -33,6 +33,7 @@ setopt extendedglob
 # ls
 alias ls='ls -G'
 alias ll='ls -la'
+alias l='ls'
 
 # OS-specific helpers
 case $(uname) in
