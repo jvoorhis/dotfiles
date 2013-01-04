@@ -18,17 +18,10 @@ set hidden        " allow switching buffers without saving
 set mouse=a       " Allow mouse to interact with cursor, windows, tabs, etc.
 set clipboard=unnamed " Yank into system clipboard
 
-set tabstop=2     " Soft, 2-space tabs
-set shiftwidth=2
-set expandtab
-
 set number
 set ruler
 set cursorline
 set cursorcolumn
-
-" Whitespace Highlighting
-set list listchars=tab:»\ ,trail:·,precedes:<,extends:>
 
 " File browser
 map <leader>n :NERDTreeToggle<CR>
@@ -39,10 +32,8 @@ set grepprg=ack\ -aH\ --nocolor " ack is better
 
 autocmd QuickfixCmdPost grep copen " auto-open the quick fix list
 
-autocmd BufNewFile,BufRead * set foldmethod=indent " fold code by indentation
-set foldlevel=4
 
-" syntax checking
+" syntax checking with ruby select by rbenv
 let g:syntastic_ruby_exec='~/.rbenv/shims/ruby'
 
 " misc gui options
@@ -79,3 +70,31 @@ colorscheme solarized
 let g:solarized_menu=0
 let g:solarized_contrast="normal"
 let g:solarized_visibility="high"
+
+" Wildmenu
+set wildmenu
+set wildmode=list:longest,full
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+
+" Cursor behavior
+set nostartofline
+set scrolloff=5
+set sidescrolloff=5
+
+" Text formatting
+set autoindent
+set smartindent
+set nowrap
+set tabstop=2 " Soft, 2-space tabs
+set shiftwidth=2
+set tabstop=4
+set expandtab
+set nosmarttab
+set textwidth=80
+set list " whitespace highlighting
+set listchars=tab:»\ ,trail:·,precedes:<,extends:>
+
+" Folding
+autocmd BufNewFile,BufRead * set foldmethod=indent " fold code by indentation
+set foldlevel=99 " open by default
+set foldignore=
