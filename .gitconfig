@@ -1,0 +1,7 @@
+[user]
+	name = Jeremy Voorhis
+	email = jvoorhis@gmail.com
+[push]
+	default = simple
+[color]
+	ui = auto
