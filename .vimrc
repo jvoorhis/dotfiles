@@ -38,7 +38,6 @@ let g:syntastic_ruby_exec='~/.rbenv/shims/ruby'
 
 " misc gui options
 if has("gui_running")
-  set background=dark
   " a: visual-mode autoselect (takes over the OS selection process)
   set guioptions+=a
   " A: autoselect for modeless selection
@@ -66,6 +65,7 @@ if has("gui_running")
   set fuoptions=maxvert,maxhorz
 endif
 
+set background=dark
 colorscheme solarized
 let g:solarized_menu=0
 let g:solarized_contrast="normal"
