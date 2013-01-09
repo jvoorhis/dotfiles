@@ -2,6 +2,6 @@
 	name = Jeremy Voorhis
 	email = jvoorhis@gmail.com
 [push]
-	default = simple
+	default = matching
 [color]
 	ui = auto
