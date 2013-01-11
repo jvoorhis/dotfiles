@@ -2,7 +2,7 @@
 fpath=(~/.zsh.d/functions $fpath)
 
 # path
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="./bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 
 # color
 export CLICOLOR=1
@@ -30,10 +30,13 @@ setopt hist_reduce_blanks
 setopt autocd
 setopt extendedglob
 
+# misc aliases
 # ls
 alias ls='ls -G'
 alias ll='ls -la'
 alias l='ls'
+# json
+alias jsonpp='python -mjson.tool'
 
 # OS-specific helpers
 case $(uname) in
