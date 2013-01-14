@@ -80,6 +80,7 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set nostartofline
 set scrolloff=5
 set sidescrolloff=5
+set virtualedit=all
 
 " Text formatting
 set autoindent
